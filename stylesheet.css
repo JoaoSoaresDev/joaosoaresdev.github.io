@@ -1,0 +1,306 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.top-bar-navigation-tab {
+    background-color: #123C69;
+    overflow: hidden;
+}
+
+.top-bar-navigation-tab img {
+    width: 4.5%;
+    float: left;
+    margin-top: 0.8%;
+    border-radius: 50%;
+}
+
+.top-bar-navigation-tab a {
+    float: left;
+    display: block;
+    color: #fafafa;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.top-bar-navigation-tab a:hover {
+    color: #659DBD;
+}
+
+.top-bar-navigation-tab .navigation-items {
+    float: right;
+    margin: 1.9%;
+    font-size: 150%;
+    margin-right: 5%;
+}
+
+#home-text {
+    font-size: 200%;
+    margin: 1.7%;
+}
+
+.banner-background {
+    background-image: url('/images/CodingPic.jpg');
+    background-size: cover;
+    height: 200%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;              /*Flexbox is centralizing the items inside the container*/
+    align-items: center;        /*Centralized items*/
+    justify-content: center;
+}
+
+@font-face {
+    font-family: myFont1;
+    src: url(/fonts/BebasNeue-Regular.woff);
+}
+
+@font-face {
+    font-family: magazineFont;
+    src: url(/fonts/Magazine.ttf);
+}
+
+@font-face {
+    font-family: paragraphFont;
+    src: url(/fonts/High-School.ttf);
+}
+
+.banner-background .background-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    margin: 5%;
+    border:solid #f1f1f1;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 200%;
+    color: #f1f1f1;
+    font-family: myFont1;
+    font-weight: bold;
+    width: 25%;
+}
+
+
+.page-wrap {
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+
+.content-wrap {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.content-container {
+    background-color: #fafafa;
+    border-radius: 2.5%;
+    padding-bottom: 10%;
+}
+
+.about-me-heading {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.about-me-heading h2, p {
+    margin: 2%;
+}
+
+.content-container h2 {
+    font-family: myFont1;
+    font-size: 250%;
+    color: black;
+    padding-top: 2.5%;   
+}
+
+.content-container p{
+    font-size: 130%;
+    color: #333333
+}
+
+.content-container .side-side-item h3{
+    display: block;
+}
+
+.split
+{
+    padding: 2.5%;
+}
+
+.split h3 {
+    font-size: 200%;
+    font-family: myFont1;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.profile-tab {
+    border: solid black;
+    border-radius: 15%;
+    padding: 5%;
+
+}
+
+.right {
+    float: right;
+    text-align: left;
+    width: 30%;
+}
+
+.right h3 {
+    text-align: center;
+}
+
+.skills-bar {
+    list-style: none;
+    padding: 0;
+    margin-left: -10%;
+
+}
+
+.skills-bar p {
+    font-size: 110%;
+    margin-bottom: 4%;
+    margin-top: 8%;
+}
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0, 0.3);
+    width: 110%;
+    margin-left: 2%;
+    border-radius: 15%;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+    height: 2px;
+    float: left;
+    background: #2187e7;
+}
+
+.backend {
+    width: 60%;
+    animation: backend 2s;
+}
+
+.web {
+    width: 65%;
+    animation: web 2s;
+}
+
+.mobile {
+    width: 45%;
+    animation: mobile 2s;
+}
+
+.problem-solving {
+    width: 70%;
+    animation: problem-solving 2s;
+}
+
+@keyframes backend {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes web {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes mobile {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes problem-solving {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #123C69;
+    color: white;
+    overflow: hidden;
+}
+
+#linkedin-icon {
+    width: 3%;
+    float: left;
+    margin-right: 2%;
+}
+
+#github-icon {
+    width: 4.5%;
+    float: left;
+    margin: 0 auto;
+    margin-top: -0.5%;
+    margin-right: 2%;
+}
+
+#gmail-icon {
+    width: 4%;
+    float: left;
+
+}
+
+.footer .footer-items {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+
+
+#copright-logo {
+    width: 5%;
+    float: right;
+}
+
+#copright-tag {
+    float: right;
+}
+
